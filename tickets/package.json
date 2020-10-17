@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@my-gittix/common": "^1.0.9",
+    "@my-gittix/common": "^1.0.12",
     "@types/express": "^4.17.7",
     "@types/mongoose": "^5.7.36",
     "express": "^4.17.1",

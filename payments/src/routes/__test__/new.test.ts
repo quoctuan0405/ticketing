@@ -4,6 +4,7 @@ import { app } from '../../app';
 import { Order } from '../../models/order';
 import { OrderStatus } from '@my-gittix/common';
 import { stripe } from "../../stripe";
+import { Payment } from '../../models/payment';
 
 jest.mock('../../stripe');
 
@@ -60,7 +61,7 @@ it('returns a 400 when purchasing a cancelled order', async () => {
         .expect(400);
 });
 
-it('returns a 204 with valid inputs', async () => {
+it('returns a 201 with valid inputs', async () => {
     const userId = mongoose.Types.ObjectId().toHexString();
 
     const order = Order.build({
