@@ -1,4 +1,4 @@
-// kubectl create secret generic stripe-secret --from-literal STRIPE_KEY=pk_test_VgCeS0nRkVdyoMuIa7ea9oks00gFCqctML
+// kubectl create secret generic stripe-secret --from-literal STRIPE_KEY=sk_test_JKL9X3aIWsxVquII48Y2uRn700Vk5UBMbH
 
 import Stripe from 'stripe';
 
